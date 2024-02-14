@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle1.css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b3e0ff; /* Fondo melocotón claro */
+        }
+
+        .icon-bar {
+            background-color: #0d07c4; /* Marrón oscuro, color de madera en el teatro */
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .icon-bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s;
+        }
+
+        .icon-bar a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            padding-top: 60px; /* Ajusta el espacio para evitar que el contenido se solape con la barra de navegación */
+        }
+
+        /* Agrega estilos adicionales para darle un toque teatral */
+        .icon-bar a i {
+            margin-right: 5px;
+        }
+
+        .icon-bar a:after {
+            content: "";
+            display: block;
+            margin: auto;
+            height: 5px;
+            width: 0;
+            background: transparent;
+            transition: width 0.5s ease, background-color 0.5s ease;
+        }
+
+        .icon-bar a:hover:after {
+            width: 100%;
+            background: white;
+        }
+    </style>
+    <title>Inicio</title>
+</head>
+<body>
+
+<div class="icon-bar">
+    <a href="registro.php"><i class="fa fa-registered"></i> Registro</a>
+    <a href="usuarios.php"><i class="fa fa-user"></i> Usuarios</a>
+    <a href="funciones.php"><i class="fa fa-smile-o"></i> Funciones</a>
+    <a href="asientos.php"><i class="fa fa-theater-masks"></i> Asientos</a>
+    <a href="boletos.php"><i class="fa fa-ticket"></i> Boletos</a>
+    <a href="categorias.php"><i class="fa fa-tags"></i> Categorías</a>
+    <a href="clientes.php"><i class="fa fa-address-book"></i> Clientes</a>
+    <a href="detalle_promociones.php"><i class="fa fa-percent"></i> Detalle de Promociones</a>
+    <a href="descuentos.php"><i class="fa fa-percent"></i> Descuentos</a>
+    <a href="reservas.php"><i class="fa fa-calendar"></i> Reservas</a>
+    <a href="salas.php"><i class="fa fa-building"></i> Salas</a>
+    <a href="obras.php"><i class="fa fa-book"></i> Obras</a>
+    <a href="promociones.php"><i class="fa fa-gift"></i> Promociones</a>
+    <a href="inicio.php"><i class="fa fa-sign-out"></i> Salir</a>
+</div>
+
+<div class="container">
+    <!-- Tu contenido aquí -->
+    <h1>Bienvenido al Sistema de Gestión de Obras de Teatro</h1>
+    <p>Explora y administra tus producciones teatrales de manera fácil y eficiente.</p>
+</div>
+
+</body>
+</html>
